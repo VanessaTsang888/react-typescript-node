@@ -84,3 +84,30 @@ install axios moduel: npm install axios
 -> node_modules
 -> this folder has installed which is what I expected.
 Now, I have everything setup. Next up, write the code.
+
+322: Executing TypeScript Code:
+We always write TS code inside of '.ts' files.
+Now we write TS code to implement our program.
+Our goal is to make a network request to fetch some JSON and print the result.
+
+-> index.ts
+To understand why TS code is handy.
+
+1. import that axio module that we've installed.
+2. past the dummy data -> one item from list. create a variable named url and assign it the url address. We are using axios to make an network request to that url.
+3. Print out the JSON data we get back which should be the x1 To Do item.
+4. Run the entire code.
+   We can't run TS code directly inside of browser or with node.js. We have to compile this into plain JS, then we can execute the resulting JS code.
+   To compile our code we need to access the compiler using this cmd: tsc
+   then the name of the file we want to compile: index.ts
+   Now, we have the complied version which is: index.js
+   To run this we use the node command line tool: node index.js
+   Now, the To Do item is printed out in terminal: { userId: 1, id: 1, title: 'delectus aut autem', completed: false }
+
+To combine these two cmd to one:
+
+1. tsc index.ts
+2. node index.js
+   The: ts-node index.ts will do that. So in one step we compiled and executed the resulting JS: the output is the same as above.
+
+So that's how we put together a basic type of program and then execute it at the terminal
