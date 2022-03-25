@@ -116,3 +116,33 @@ So that's how we put together a basic type of program and then execute it at the
 Print report as multi-line String uing console.lgo()
 Run the file using: ts-node index.ts
 -> error msge: Cannot find name 'todo'.
+
+324: Catching Erors with TypeScript:
+The property id's we used are wrong. They should be:
+{
+"userId": 1,
+"id": 1,
+"title": "delectus aut autem",
+"completed": false
+}
+
+This is why we got the error msg. The lesson is that we write code with bug in it but we were not aware of it until we executed our program. This is what TS is made to prevent.
+Add in some TS syntax / define interface is used to define the structure of an object. Each Todo object will have 3 properties.
+TS: write the 3 different properties the response has, and type of data each properties reference:
+
+interface Todo {
+id: number;
+title: string;
+completed: boolean;
+}
+
+Now we can tell TS that this response.data is going to be one of those Todo's. So straight after that bit of code, we add: as Todo;
+Now, TS will underline our errors to tell us we have bugs in our code using the type labeling we added to this program. As we fix the errors, the underline will disappear.
+I've fixed all bugs and ran again using: ts-node index.ts
+and the program printed out the report without any errors:
+
+The Todo with ID: 1
+Has a Title of: delectus aut autem
+Is it finished? false
+
+I've checked the JSON files, and I can see the report is correct.
