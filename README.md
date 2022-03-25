@@ -1,6 +1,6 @@
 # React and Typescript: Build a Portfolio Project
 
-This is a Udemy training course that I am studying to develop my React.js, TypeScript and Node.js skills. At the sametime to develop a brand new responsive portfolio website using those technologies. To read more about the training course use this link: (https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
+This is a Udemy training course that I am studying to develop my React.js, TypeScript and Node.js skills. At the sametime to develop a brand new responsive portfolio website using those technologies. [To read more about the training course](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
 ## Once completed this course, I would of learnt how to:
 
@@ -26,4 +26,4 @@ Once I have completed my responsive portfolio, you will be able to download my s
 
 ### Publish on GitHub Pages:
 
-Once my portfolio website is completed I will publish using GitHub Pages and the url for that will be publish here. Here is the resouce for GitHub Pages in case you would like to read up on the benefits: (https://pages.github.com/)
+Once my portfolio website is completed I will publish using GitHub Pages and the url for that will be publish here. Here is the resource for GitHub Pages in case you would like to read up on the benefits: [GitHub Pages](https://pages.github.com/)
