@@ -35,3 +35,23 @@ Summary:
 Writing TS is the same as writing JS with some extra documentation.
 TS has no effect on how our code gets executed by the browser or Node - don't do any optimisation.
 Think of TS as a friend sitting behind us while we are coding helping us catch errors during development.
+
+320: Environment Setup:
+
+TS Compiler:
+Install x2 moduels as below:
+npm install -g typesript ts-node
+This is a one time setup
+If on MacOS and get 'EACCESS' error, add 'sudo' to the front.
+
+Run the compiler using this cmd: tsc --
+This is what we'll use to compile our TS into JS.
+
+Setup VSCode:
+Settings to set:
+
+1. add 'code' to path:
+   allows mView -> Command Palette -> type: install path -> click: install 'code' command in PATH.
+2. I already have Prettier installed -> code formatter.
+3. Configure Prettier to us single quotes rather than double quotes.
+4. Use double space rather than tab for indentation: Settings -> Tab Size: 2
