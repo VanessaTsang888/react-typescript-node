@@ -111,3 +111,8 @@ To combine these two cmd to one:
    The: ts-node index.ts will do that. So in one step we compiled and executed the resulting JS: the output is the same as above.
 
 So that's how we put together a basic type of program and then execute it at the terminal
+
+323: One Quick Change:
+Print report as multi-line String uing console.lgo()
+Run the file using: ts-node index.ts
+-> error msge: Cannot find name 'todo'.
