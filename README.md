@@ -1,6 +1,6 @@
 # React and Typescript: Build a Portfolio Project
 
-This is a Udemy training course that I am studying to develop my React.js, TypeScript and Node.js skills. At the sametime to develop a brand new responsive portfolio website using those technologies. [To read more about the training course](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
+This is a Udemy training course that I am studying to develop my React.js, TypeScript and Node.js skills. At the sametime to develop a brand new responsive portfolio website using those technologies. To read more about this training course on [Udemy](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
 ## Once completed this course, I would of learnt how to:
 
