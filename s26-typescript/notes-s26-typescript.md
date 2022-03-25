@@ -54,4 +54,33 @@ Settings to set:
    allows mView -> Command Palette -> type: install path -> click: install 'code' command in PATH.
 2. I already have Prettier installed -> code formatter.
 3. Configure Prettier to us single quotes rather than double quotes.
-4. Use double space rather than tab for indentation: Settings -> Tab Size: 2
+4. Use double space rather than tab for indentation: Settings -> Tab Size: 2.
+
+321: A First App:
+To show why we use TS in general, build a little app:
+Make a network request to fetch some JSON and print the result:
+A little app that's just going to make a network request to some outside API. Fetch some data. Then print that data inside of our terminal.
+
+Will accidently introduce couple of bugs into our app and we'll see TS has ability to help us catch those bugs whilst we are writing our code not when we execute our code. So just to show the typical workflow of TS.
+
+The Flow to Build this App:
+
+1. Take a look at the API we'll use to fetch data.
+2. Create a new project directory.
+3. Create a package.json file.
+4. Install axios to make a request (to make a network request).
+5. Write code.
+
+API:
+A fake JSON API that serves up fake data that we can use for testing/learning purpose: jsonplaceholder.typicode.com
+Scroll down to Resources -> these are different types of records, so we can make a request or attempt to fetch from. We'll attempt to fetch the list of '/todos'.
+Click on that link -> copy the url as we'll make network req to this address -> we'll get back a list of to do's items but we just need to fetch the first item from that list so we can modify the url slightly: at end of url, add '/1' which will give us a single to do on our screen which is the data we want to fetch and print out some info to our terminal
+
+Create new project dir:
+cmd: mkdir fetch-json
+cmd: cd fetch-json
+generate new package.json file: npm init -y
+install axios moduel: npm install axios
+-> node_modules
+-> this folder has installed which is what I expected.
+Now, I have everything setup. Next up, write the code.
