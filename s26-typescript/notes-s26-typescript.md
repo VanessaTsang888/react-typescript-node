@@ -146,3 +146,113 @@ Has a Title of: delectus aut autem
 Is it finished? false
 
 I've checked the JSON files, and I can see the report is correct.
+
+325: Catching More Errors!
+Take the console.log() and put in a separte helper function named logTodo() leaving the promised body more compact.
+This logTodo() will take-in the 3 variables, id, title, completed.
+Then called logTodo() from above the function within the promise body and it will call the fn for us. For the arguments,
+pass-in the 3 variables.
+For each argument of the logTodo() we want to add-in a type annotation/TS syntax which will highlight errors as we write our code.
+so for the id variable, whatever, we pass-in here, it must be a number. The title has to be a String. The completed has to be a boolean.
+This is NOT writing an Object, instead we're just describing the type of variable that it's going to be.
+Now we can see that error highlighed in red. Hover over the red underline, the error msg tells us that completed should be a boolean not a String but we
+tried to pass it in as the second argument to the logTodo fn but that fn says the second argument has to be a String.
+
+326: Course Overview:
+Course Goal:
+
+1. Understand basic types in TS
+2. Function typing & annotations
+3. Type definition files
+4. Arrays in TS
+5. Modules systems
+6. Classes & Refresh on OOP
+7. Projects
+
+1-6 = Syntax + Features
+7 = Design Patterns
+
+327: Types:
+Syntax + Features 01: Baisc Types
+Type -> a way to refer to the different properties + functions that a value has.
+
+-> a value is anything that we can assign to a variable: strings, numbers, booleans, null, undefined, objects, fn's, classes etc. All of these have a Type.
+An arry, an Object, a function all have a Type.
+
+What different properties and methods a string has:
+i.e. "red"
+-> Its a string
+-> It is a value that has all the properties + methods that we assume that a string has.
+
+The properties and methods a string has in JS:
+charAt()
+CharCodeAt()
+concat()
+includes()
+endsWith()
+indexOf()
+lastIndexOf()
+localeCompare()
+match()
+
+In short, the type of a value of "red" is a String. Every value we create has a type assigned to it.
+
+Previous app:
+The response.data is a Todo object, that has 3 properties and each of them has a type.
+So when we describe types in TS, these are just shortcuts or labels as we are describing the differnt properties and methods that a single value has.
+
+328: More on Types:
+Type: Values That Have This Type:
+string 'hi there' "" 'Today is Monday'
+number .000025 -20 40000000000000000
+boolean true false
+Date new Date()
+Todo { id: 1, completed: true, title: "Trash" }
+
+Every value in TS has a type, i.e. a Boolean type has a value of true and a value of false. If we made anew date object, the resulting object from that would have a type of Date.
+This object has a type Todo:
+Todo: { id: 1, completed: true, title: "Trash" }
+
+We have 2 category of Types:
+Primative Types and Object Types:
+
+Primative Types
+number, boolean, void, undefined.
+string, symbol, null.
+
+Object Types:
+functions, arrays.
+classes, objects.
+
+We care about types as:
+
+1. Types are used by TS Comiler to analyse our code for errors, i.e. the todo variable contains a couple of different types such as the number type for the id property etc.
+2. Types allow other engineers to understand what values are flowing around our codebase, i.e. in our First App we used TS to state that the logTodo takes-in arg of title which has a type of string. This allows TS to find errors for us.
+
+329: Examples of Types:
+
+Basic features of TS:
+create new dir -> mkdir features | cd features | code
+
+330: Where Do We Use Types?
+We use types everywhere!
+Whether you want to or not, every value you define inside your app is going to have a type associated with it. TS is going to do its best to check the quality of our code or check for errors by using those types.
+
+331: Type Annotations & Type Inference:
+Two different systems inside TS. These 2 different features apply slightly differently to variable declarations, functions and objects.
+
+1. Type Annotations & Type Inference as apply for variables.
+   Type Annotations is a little code we add to tell TS what type of value a variable will refer to.
+   Type Inference is TS is going to attampt to figure out what type of value a variable refers to. We are relying TS to figure out what types we are working with.
+
+   332: Type Annotations with Variable:
+   How Annotations work with variables:
+
+   let nothingMuch: null = null;
+   let nothing: undefined = undefined;
+
+// built in Objects:
+// Declare a variable and name it now that has a type of Date assign it of an instance of a Date object:
+let now: Date = Deate();
+
+333: Object Literal Annotations:
