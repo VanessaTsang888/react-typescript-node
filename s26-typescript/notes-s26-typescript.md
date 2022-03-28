@@ -256,3 +256,37 @@ Two different systems inside TS. These 2 different features apply slightly diffe
 let now: Date = Deate();
 
 333: Object Literal Annotations:
+See the variables.ts file for my notes.
+
+334 Annotation Around Functions:
+See the variables.ts file for my notes.
+
+335 Understanding Inference:
+Know when we can rely on type Inference.
+
+If variable declaration and variable initialisation are on the same line. TS will figure out the type of the variable for us.
+
+Type Annotations: dev's tell tS the type.
+When?
+
+1. When we declare a variable on one line then initialise it later.
+2. When we want a vaariable to have a type that can't be inferred.
+3. When a fn returns the 'Any' type and we need to clarify the value.
+
+Type Inference: when TS guesses the type.
+
+1. Always or when possible.
+
+336 The 'any' Type:
+The 'any' type:
+When to use annotations:
+
+1. function that returns the 'any' type:
+
+Define a JSON as a string, then pass that JSON. So write a variable named json, and assign it a JSON string.
+Turn the string into an actual Object.
+
+See the variables.ts file for my notes.
+
+337 Fixing the 'any' Type:
+See the variables.ts file for my notes.
