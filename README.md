@@ -24,12 +24,6 @@ This is a long course. However, worth completing as I wish to reinforce and deve
 
 Once I have completed my responsive portfolio, you will be able to download my source code, take a look at my code base and run my website locally to test it. I will give you the instructions in how to run my website locally later when I get further into the course.
 
-### Quick Wins
-These are improvements to the web app that I set to achieve after I have complete app by following the course instructor.
-1. Code comments: write my own code comments to state the the logic for each block of code.
-2. Code improvements: refactor my code to make my app more effient whilst still adhereing to the best practices.
-3. Add more content to the app to state that i used a third party API and provide the resource to that.
-4. Hosting: find an open source hosting platform and host this dynamic web app. Then provide the link to my team members and ask them for feedback.
 
 ### Publish on GitHub Pages:
 
