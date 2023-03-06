@@ -15,6 +15,20 @@ the response arrow func and printout the data using the console.log() statement.
 import axios from 'axios';
 const url = 'https://jsonplaceholder.typicode.com/todos/1';
 
+/* 
+To develop the report, pull off the  `id`, `title`, `completed` properties. Assign them to 
+temp variables, insert them all into a string to print them out as multi-line string.
+ */
 axios.get(url).then(response => {
-  console.log(response.data);
+  const todo = response.data;
+
+  const id = todo.id;
+  const title = todo.title;
+  const completed = todo.completed;
+
+  console.log(`
+    The Todo with ID: ${id}
+    Has a title of: ${title}
+    Is it finished? ${completed}
+  `);
 });
