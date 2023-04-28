@@ -1,0 +1,18 @@
+# File Extensions and Starting Up React
+
+Will the file contain a React component, or any kind of JSX?
+Use the extension of `.tsx`
+
+No JSX?
+Use `.ts` for redux as that dont contain JSX syntax.
+
+
+Task 01:
+Write a simple component and display on screen.
+File name: `index.tsx`.
+
+The code don't change as its still the code we would write to develop a React app. 
+
+To run our app: `npm start`.
+Navigate to: http://localhost:3000/
+I can see the palin text displayed on the screen as expected.
