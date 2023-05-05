@@ -28,6 +28,7 @@ export const Child = ({ colour, onClick }: ChildProps) => {
 };
 
 // Destructure out of our color props object the onClick func
+// children object as in Parent component we have content inside of the 'ChildAsFC' component.
 export const ChildAsFC: React.FC<ChildProps> = ({ colour, onClick, children }) => {
   return (
     <div>
