@@ -13,6 +13,7 @@ sice we don't expect to receive any props. Return a simple div
 element to display a little simple plain text.
 */
 
+// To update a piece of state, import useState hook
 import { useState } from 'react';
 
 const GuestList: React.FC = () => {
