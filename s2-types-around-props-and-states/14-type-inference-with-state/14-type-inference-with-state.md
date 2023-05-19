@@ -11,10 +11,10 @@ Take whatever the user has typed inside of here and add that as a new String int
 Then within the onClick func, clear out the current value of the input/empty it entirly. So for this we use the setName piece of state or the setter func and pass-in empty string. 
 Then take the current value of name, add it to our guests array, by calling setGuests func. Pass-in arry of name as this will delete any previous guests we've added into our app.
 
-Take the current array of guests, take all the different strings out of it, add it to an new array, and then add it to a new array, and then add on name to the very end. Now we have error of `never[]` which is array of never. For the guests arry we initialise with empty array but since its empty TS have no idea what types of value should be stored in here. This is why the guests piece of state is type of never[] as TS has no idea what type of values is going to go inside of this array. So annotate this useState hook: 
+Take the current array of guests, take all the different strings out of it, add it to an new array, and then add it to a new array, and then add on name to the very end. Now we have error of `never[]` which is array of never. For the guests array we initialise with empty array but since its empty TS have no idea what types of value should be stored in here. This is why the guests piece of state is type of never[] as TS has no idea what type of values is going to go inside of this array. So annotate this useState hook: 
 
 ```js 
-// Our guests piece of state will be an array of Strings.
+// Our guests piece of state (which is a variable) will be an array of Strings - see the type annotation on the right side: <string[]>
 const [guests, setGuests] = useState<string[]>([]);
 ```
 
