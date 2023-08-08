@@ -1,10 +1,13 @@
-/*
+/*********************************************************************************************************
+Enums allows dev's to define a set of named constants and makes it easier to document intent or create 
+a set of distinct cases.
+
 This file is a really good example in how to set up our reducer, how to type our different Actions
 how to apply those Action Types inside of our reducer, how to setup an Action Type enum and make 
 use of that enum inside of a reducer, and our Action Type interfaces as well.
 
 Now make sure we are using the Actions in an appropriate way.
-*/
+******************************************************************************************************/
 
 
 
@@ -62,4 +65,5 @@ const reducer = (
   }
 };
 
+// Need to export so this reducer can be used in other code files.
 export default reducer;
