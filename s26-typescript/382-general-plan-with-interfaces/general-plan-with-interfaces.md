@@ -31,4 +31,8 @@ Interface: Reportable
 Some func: `printSummary`
 Values: `oldCivic`, `drink`
 
+## Next up
+
+383. Classes
+
 
