@@ -18,6 +18,8 @@ So the general strategy that we're going to use for code resue in TS is to creat
 
 Then in order to call those func's, we're going to make sure that we have objects or classes that can decide to implement that interface.
 
+TS Code:
+
 ```js
 // Implement the interface passed into the `printSummary` func.
 printSummary(oldCivic);
